@@ -1,0 +1,14 @@
+Current Pi settings are
+
+Raspberry PI Imager        https://downloads.raspberrypi.org/imager/imager_latest.exe
+Raspberry Pi OS Lite       https://www.raspberrypi.com/software/operating-systems/
+
+ sudo apt-get update
+ sudo apt-get install python3-pip
+
+ sudo apt-get install python3-serial 
+
+ sudo apt install apache2 -y
+sudo apt install php -y
+
+sudo apt install python3-usb

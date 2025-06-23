@@ -1,0 +1,37 @@
+logging:on
+monitor:on:20
+#Wait for Button (Load Grain)
+Wait:Button
+#Preheat grain and water to 60C (140F)
+Bag:Set:60
+Grain:Set:60:Wait
+#Mash Hold
+#Heat grain to 67C (152F) for mash
+Bag:Set:67
+Grain:Set:67:Wait
+#Hold temperature for mashing 60 min
+Wait:3600
+#Heat to Mashout (73C)
+Bag:Set:73
+Grain:Set:73:Wait
+#Mashout Hold
+Wait:900
+Grain:off
+#Cool to Pitch
+Bag:Set:18:Wait
+#Wait for Pitch
+Wait:Button
+#Fermentation Step 1 50F
+Bag:Set:10:Wait
+#Change temperature reporting interval
+monitor:on:60
+#Fermenting 6 days at 50F
+Wait:518400
+#Crash
+Bag:Set:4
+#Crash Hold 4 days @4C
+Wait:345600
+#Wait for final button press
+Wait:Button
+Bag:off
+Monitor:off

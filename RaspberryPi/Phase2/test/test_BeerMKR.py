@@ -68,18 +68,18 @@ class TestBeerMKR(unittest.TestCase):
     self.sleep_patcher.start()
 
     # Now we can safely import BeerMKR
-    from BeerMKR import recipe, logger, marlin_cmd
+    from BeerMKR import recipe, logger, marlincmd
     self.recipe = recipe
     self.logger = logger
-    self.marlin_cmd = marlin_cmd
+    self.marlincmd = marlincmd
 
   def tearDown(self):
     self.patcher.stop()
     self.sleep_patcher.stop()
 
   @patch('builtins.open', new_callable=mock_open)
-  def test_marlin_cmd(self, mock_open_func):
-    self.marlin_cmd("M104 S60")
+  def test_marlincmd(self, mock_open_func):
+    self.marlincmd("M104 S60")
     mock_open_func.assert_called_with('marlinqueue.cmd', 'a')
     mock_open_func().write.assert_called_with("M104 S60\n")
 

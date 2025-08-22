@@ -1,0 +1,59 @@
+Boards and Cables
+- Arduino Mega 2560 board  https://www.microcenter.com/product/486545/inland-mega-2560-mainboard-arduino-compatible or Amazon
+- Ramps 1.6 (Amazon or Ebay - I haven't found any place to order from where this doesn't ship from China)
+- Raspberry Pi Zero 2 W + USB Power Supply
+- USB OTG (On the Go) cable - Micro USB to USB-A   https://a.co/d/4iUhsvC
+- Standard USB to USB-B cable (May come with Mega board) Something like this (https://a.co/d/fStud2p) that you probably already have
+
+Parts
+
+- MicroSD for Raspberry Pi (32G at least)
+
+- DPDT relay 12v 10A
+  - I used one of these. https://a.co/d/dN7ZP2d  The current setup drives the relay from 12.  Other setups are possible.
+
+Peltier Connection (Rev E Boards)
+- Pins	JST SVF-42T-P2.0	Digi Key 455-2347-1-ND	Qty 2	Unless you are perfect at crimping get more than 2
+- Shell	JST VLR-02V	Digi Key 455-2355 ND	Qty 1	
+
+BeerMKR Power Connector
+- Pins	Hirose DF63-1618PC	Mouser 798-DF63-1618PC	Qty 2	Unless you are perfect at crimping get more than 2
+- Shell	Hirose DF63A-2EP-3.96C	Mouser 798-DF63-1618PC	Qty 1	
+
+
+Heater Connectors
+- JST B2P-VH	Digi-Key 455-1639-ND	2 for Phase 2	I got mine in a bunch from Amazon
+
+Temperature Sensor Connector
+- JST B2B-PH-K-S	Digi-Key 455-1704-ND	Qty 1	I bought an Amazon assortment
+
+Peltier Fan
+- JST B3B-PH-K-S	Digi-Key 455-1705-ND	Qty 1
+
+All of the rest of the connectors are JST-XH connectors. I bought this assortment: https://a.co/d/1YkNZvN
+
+Relay Driver Electronics: TBD
+
+
+- 2.5mm jack to plug in second temperature probe.  I liked these better than anything on Amazon.  I have it mounted on the left side of my BeerMKR https://www.ebay.com/itm/274570248806
+
+The meat probe I used is gone off of Amazon.  It would be something like this: https://a.co/d/guGDll9.  Needs to be food safe.
+
+Wire: 
+- Need power wiring from BeerMKR to Printer Board, to Peltier Connector and relay assembly.  Suggest 16/2 red/black oxygen-free copper.  I used other.
+- Misc 20AWG hookup wire for board jumpers and connectors
+- Misc Headers
+
+
+
+Tools
+- Soldering Iron
+- Wire Crimping Tool  https://a.co/d/hXJu4JY
+
+
+
+Software (Windows)
+
+- Visual Studio Code (for programming Marlin onto Arduino)
+- Putty or other SSH terminal (for talking to Raspberry Pi)
+- Raspberry Pi loader

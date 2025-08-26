@@ -1,0 +1,9 @@
+# ignore everything starting with a dot
+.*
+# except the following exceptions
+!.gitignore
+
+# ignore specific files
+
+# intellij project files
+*.iml
